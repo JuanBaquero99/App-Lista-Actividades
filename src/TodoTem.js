@@ -1,8 +1,8 @@
-function TodoTem() {
+function TodoTem(props) {
   return (
     <li>
       <span>V</span>
-      <p>Llorar con la Llorona</p>
+      <p>{props.text}</p>
       <spa>X</spa>
     </li>
   );
