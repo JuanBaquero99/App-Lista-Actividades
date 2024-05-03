@@ -1,0 +1,29 @@
+input {
+  font-family: 'Eurostile Extended', Arial, sans-serif; /* Fuente preferida con fuentes de respaldo */
+  background-color: #053415; /* Color de fondo verde oscuro mantenido */
+  color: #24AA5A; /* Color del texto verde claro mantenido */
+  font-size: 24px; /* Tamaño de fuente grande para mejor legibilidad */
+  text-align: center; /* Centrado horizontal del texto */
+  margin-top: 20px; /* Margen superior para separación visual */
+  padding: 12px 20px; /* Ajuste de espacio interno para equilibrio */
+  border: 2px solid #035D2B; /* Borde sutil para definición */
+  border-radius: 10px; /* Esquinas ligeramente redondeadas para suavidad */
+  outline: none; /* Eliminación del contorno al enfocar */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más definida para profundidad */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transiciones suaves para interactividad */
+}
+
+input:focus {
+  box-shadow: 0px 0px 12px #24AA5A; /* Sombra de enfoque que coincide con el color del texto */
+  transform: scale(1.05); /* Ligero aumento de tamaño al enfocar */
+}
+
+.gif-container {
+  display: flex;
+  justify-content: center; /* Alineación horizontal centrada */
+  align-items: center; /* Alineación vertical centrada */
+  margin-top: 20px; /* Margen superior ajustado */
+  padding: 15px; /* Espacio interno para contenido */
+  border-radius: 8px; /* Redondeo de esquinas para consistencia con el input */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para efecto visual */
+}

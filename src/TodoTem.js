@@ -1,9 +1,9 @@
 function TodoTem(props) {
   return (
     <li>
-      <span>V</span>
+      <span></span>
       <p>{props.text}</p>
-      <spa>X</spa>
+      <spa></spa>
     </li>
   );
 }

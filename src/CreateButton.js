@@ -1,7 +1,9 @@
+import './CreateButton.css';
+
 function CreateButton() {
     return (
 
-        <button>Click Aquí</button>
+        <button>Agregar Misión</button>
 
     );
 }

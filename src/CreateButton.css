@@ -1,0 +1,22 @@
+button {
+    font-family: 'Eurostile Extended', Arial, sans-serif; /* Fuente preferida con fuentes de respaldo */
+    background-color: #053415; /* Color de fondo verde oscuro mantenido */
+    color: #7FF12A; /* Color del texto verde claro mantenido */
+    font-size: 24px; /* Tamaño de fuente grande para destacar */
+    text-align: center; /* Alineación horizontal del texto */
+    margin-top: 20px; /* Espacio superior para separación visual */
+    padding: 15px 30px; /* Aumento del espacio interno para un mejor tacto */
+    border: 2px solid #24AA5A; /* Borde sutil para definición */
+    border-radius: 12px; /* Esquinas más redondeadas para un diseño moderno */
+    cursor: pointer; /* Indicador visual para la interactividad */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra de texto ajustada para mejor legibilidad */
+    transition: all 0.3s ease; /* Transición suave para todos los cambios de estado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra de caja para profundidad */
+}
+
+button:hover, button:focus {
+    background-color: #24AA5A; /* Color de fondo al interactuar */
+    color: #053415; /* Color del texto al interactuar */
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.5); /* Sombra de caja intensificada al interactuar */
+    transform: translateY(-2px); /* Ligero desplazamiento hacia arriba para efecto de elevación */
+}

@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Eurostile Extended', Arial, sans-serif; /* Cambio a la fuente preferida */
+  background-color: #000000; /* Color de fondo negro mantenido */
+  color: #fff; /* Color del texto blanco mantenido */
+  margin: 0; /* Elimina el margen predeterminado */
+  padding: 0; /* Elimina el relleno predeterminado */
+  transition: background-color 0.3s; /* Transición suave para cambios de fondo */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer {
+  background-color: #333; /* Color de fondo gris oscuro para el pie de página */
+  color: #fff; /* Color del texto blanco */
+  padding: 20px; /* Espacio interno mantenido */
+  text-align: center; /* Alineación central del contenido */
+  position: fixed; /* Fija el pie de página */
+  left: 0; /* Alineación izquierda */
+  bottom: 0; /* Posición inferior */
+  width: 100%; /* Ancho completo */
+  border-top: 3px solid #24AA5A; /* Borde superior para un toque de color */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Sombra para efecto de elevación */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #233553;
-  min-height: 100vh;
+.gif-container {
+  position: absolute;
+  top: 50%; /* Centrado vertical */
+  left: 50%; /* Centrado horizontal */
+  transform: translate(-15%, -37%); /* Ajuste para centrado perfecto */
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center; /* Alineación vertical para centrar el contenido */
+  max-width: 500px; /* Ancho máximo mantenido */
+  width: 100%; /* Ancho responsivo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para definición */
 }
 
-.App-link {
-  color: #97ca3f;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Media queries para adaptabilidad en diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+  .gif-container {
+    left: 50%; /* Centrado en pantallas medianas */
+    top: 30%; /* Ajuste vertical para evitar solapamiento con otros elementos */
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 480px) {
+  .gif-container {
+    left: 50%; /* Centrado en pantallas pequeñas */
+    top: 25%; /* Ajuste vertical adicional para pantallas muy pequeñas */
   }
 }

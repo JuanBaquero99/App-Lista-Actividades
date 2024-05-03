@@ -1,0 +1,25 @@
+ul {
+    font-family: 'Eurostile Extended', Arial, sans-serif; /* Fuente moderna y geométrica */
+    background-color: transparent; /* Fondo transparente para cualquier fondo */
+    color: #7FF12A; /* Color del texto verde neón para un toque futurista */
+    font-size: 24px; /* Tamaño de fuente grande para facilidad de lectura */
+    text-align: left; /* Alineación del texto a la izquierda */
+    margin-top: 30px; /* Espacio superior para separación visual */
+    padding-left: 40px; /* Espacio interno izquierdo aumentado para alinear con otros elementos */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra de texto más definida para contraste */
+    list-style: none; /* Sin estilo de lista para un look limpio */
+    border-left: 3px solid #24AA5A; /* Borde izquierdo sólido para indicar elementos de la lista */
+    transition: all 0.3s ease; /* Transición suave para efectos hover */
+}
+
+ul li {
+    margin-bottom: 10px; /* Margen inferior para separar los elementos de la lista */
+    transform: translateX(0px); /* Posición inicial para la animación */
+    transition: transform 0.3s ease; /* Transición suave para la animación */
+}
+
+ul li:hover {
+    color: #FFFFFF; /* Cambio de color al pasar el ratón para mejor visibilidad */
+    transform: translateX(10px); /* Desplazamiento horizontal al pasar el ratón para un efecto dinámico */
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8); /* Sombra de texto más intensa al pasar el ratón */
+}
