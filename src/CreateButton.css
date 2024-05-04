@@ -1,4 +1,4 @@
-button {
+.CreateTodoButton {
     font-family: 'Eurostile Extended', Arial, sans-serif; /* Fuente preferida con fuentes de respaldo */
     background-color: #053415; /* Color de fondo verde oscuro mantenido */
     color: #7FF12A; /* Color del texto verde claro mantenido */

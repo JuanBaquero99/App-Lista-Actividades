@@ -1,11 +1,12 @@
+import React from 'react';
 import './TodoList.css';
 
 function TodoList({ children }) {
-    return (
-        <ul>
-            {children}
-        </ul>
-    );
+  return (
+    <ul className="TodoList">
+      {children}
+    </ul>
+  );
 }
 
 export { TodoList };
