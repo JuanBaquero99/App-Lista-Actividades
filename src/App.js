@@ -1,19 +1,20 @@
 import React from 'react';
-import { TodoCounter } from './TodoCounter';
-import { TodoSearch } from './TodoSearch';
-import { TodoList } from './TodoList';
-import { TodoTem } from './TodoTem';
-import { CreateButton } from './CreateButton';
-import './App.css';
+import { TodoCounter } from './TodoCounter'; // Importa el componente TodoCounter
+import { TodoSearch } from './TodoSearch'; // Importa el componente TodoSearch
+import { TodoList } from './TodoList'; // Importa el componente TodoList
+import { TodoTem } from './TodoTem'; // Importa el componente TodoTem
+import { CreateButton } from './CreateButton'; // Importa el componente CreateButton
+import './App.css'; // Importa los estilos CSS de la aplicación
 
 // Importa el GIF
-import gifImage from './assets/pip-boy-app.gif';
+import gifImage from './assets/pip-boy-app.gif'; // Importa la imagen GIF
 
 // Lista predeterminada de tareas
 const defaultTodos = [
-  { text: 'Terminar Fallout 3', completed: false },
+  { text: 'Terminar Fallout 3', completed: true },
   { text: 'Terminar Curso React', completed: false },
   { text: 'Ver Perfect Days', completed: false },
+  { text: 'Terminar Skirym', completed: true },
 ];
 
 function App() {
@@ -28,6 +29,13 @@ function App() {
   // Número total de tareas
   const totalTodos = todos.length;
 
+  //Linea para lograr las busquedas de acuerdo a palabras sin importar mayuscula o minuscula
+const searchedTodos = todos.filter(todo => {
+  const todoText = todo.text.toLowerCase(); 
+  const searchText = searchValue.toLowerCase();
+  return todoText.includes(searchText);
+});
+
   return (
     <div className="app-container">
       {/* Componente para mostrar el contador de tareas */}
@@ -39,7 +47,8 @@ function App() {
       />
       {/* Componente para mostrar la lista de tareas */}
       <TodoList>
-        {defaultTodos.map(todo => (
+        {/* Mapea sobre la lista de tareas y renderiza el componente TodoTem */}
+        {searchedTodos.map(todo => (
           <TodoTem
             key={todo.text}
             text={todo.text}
