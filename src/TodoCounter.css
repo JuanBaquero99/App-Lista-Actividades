@@ -28,3 +28,17 @@ h1::after {
 h1:hover::after {
     left: 100%;
 }
+.mensaje-victoria {
+    font-family: 'Eurostile Extended', Arial, sans-serif;
+    color: #7FF12A;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 30px;
+    padding: 20px 20px;
+    border-radius: 8px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
