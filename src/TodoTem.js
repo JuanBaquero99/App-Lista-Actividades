@@ -8,7 +8,7 @@ function TodoTem(props) {
       onClick={props.onComplete}
       
       >
-        V
+        ✔︎
       </span>
       <p className={`TodoTem-p ${props.completed && "TodoTem-p--complete"}`}>
         {props.text}
@@ -17,7 +17,7 @@ function TodoTem(props) {
       className="Icon Icon-delete"
       onClick={props.onDelete}
       >
-        X
+        ☢️
       
       </span>
     </li>
