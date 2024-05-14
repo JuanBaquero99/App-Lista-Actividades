@@ -1,12 +1,12 @@
-# Repositorio base del Curso de Introducción a React.js en Platzi
+# Herramienta de Gestión de Actividades
 
-¡Hola, Platzinauta!
+¡Hola!
 
-En este repositorio encontrarás el código de todas las clases del [Curso de Introducción a React.js](https://platzi.com/reactjs). Para empezar solo debes clonar este repositorio (`git clone`), instalar sus dependencias (`npm i`) y ejecutar la aplicación (`npm start`).
+La aplicación desarrollada empleando tecnologías como React, JSX, HTML, JS y CSS, está diseñada como una herramienta de gestión de actividades, ofreciendo funcionalidades que incluyen la capacidad de agregar, completar y eliminar tareas, entre otras. Esta solución se fundamenta en el paradigma de React.js, con reconocimiento al profesor Juan David Castro por su contribución inicial en la estructura del código que sirvió como base para el desarrollo y despliegue del aplicativo.
 
-La rama principal contiene el código con el que eempezamos el curso. En las demás ramas encontrarás el código de las siguientes clases y finalmente el deploy de la aplicación.
+A continuación avisos parroquiales con respecto al uso de React si así lo desea y y los scrips para iniciar los paquetes de NPM que me sirvieron de base para desarollar dicha aplicación. 
 
-¡Mucha suerte aprendiendo React! #NuncaParesDeAprender
+Por cierto! La interfaz de la aplicación esta inspirada en el videojuego Fallout, especificamente en el PipBoy que es la tecnología que acompaña al jugador durante la travesia por el Yermo. 
 
 ## Getting Started with Create React App
 
