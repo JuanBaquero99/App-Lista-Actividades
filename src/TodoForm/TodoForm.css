@@ -1,0 +1,65 @@
+/* TodoForm.css */
+
+.TodoForm {
+    font-family: 'Eurostile Extended', Arial, sans-serif;
+    color: #fff;
+  }
+  
+  .TodoForm-label {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .TodoForm-textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #24AA5A;
+    border-radius: 8px;
+    background-color: rgba(5, 52, 21, 0.8); /* Ajusta la opacidad del fondo */
+    color: #fff;
+    font-family: 'Eurostile Extended', Arial, sans-serif;
+    font-size: 16px;
+    resize: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .TodoForm-textarea:focus {
+    border-color: #7FF12A; /* Cambia el color del borde al enfocar */
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Agrega una sombra sutil al enfocar */
+  }
+  
+  .TodoForm-buttonContainer {
+    text-align: center;
+  }
+  
+  .TodoForm-button {
+    font-family: 'Eurostile Extended', Arial, sans-serif;
+    background-color: #053415;
+    color: #7FF12A;
+    font-size: 24px;
+    text-align: center;
+    margin-right: 10px;
+    padding: 15px 30px;
+    border: 2px solid #24AA5A;
+    border-radius: 12px;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .TodoForm-button--cancel {
+    background-color: #333;
+    border-color: #999;
+  }
+  
+  .TodoForm-button:hover,
+  .TodoForm-button:focus {
+    background-color: #24AA5A;
+    color: #053415;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+  }
+  

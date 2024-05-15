@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-// Función personalizada para gestionar el almacenamiento local
 function useLocalStorage(itemName, initialValue) {
     const [storedValue, setStoredValue] = useState(() => {
         try {
@@ -12,7 +11,7 @@ function useLocalStorage(itemName, initialValue) {
         }
     });
 
-    const setValue = (value) => {
+    const saveTodos = (value) => {
         try {
             const valueToStore = value instanceof Function ? value(storedValue) : value;
             setStoredValue(valueToStore);
@@ -22,7 +21,10 @@ function useLocalStorage(itemName, initialValue) {
         }
     };
 
-    return [storedValue, setValue];
+    return {
+        storedValue,
+        saveTodos,
+    };
 }
 
 export { useLocalStorage };

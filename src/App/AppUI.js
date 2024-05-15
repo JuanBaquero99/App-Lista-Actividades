@@ -1,32 +1,42 @@
 import React from 'react';
-import { TodoCounter } from '../TodoCounter'; // Componente para mostrar el contador de tareas
-import { TodoSearch } from '../TodoSearch'; // Componente para la barra de búsqueda de tareas
-import { TodoList } from '../TodoList'; // Componente para mostrar la lista de tareas
-import { TodoTem } from '../TodoTem'; // Componente de plantilla para cada tarea
-import { CreateButton } from '../CreateButton'; // Botón para crear nuevas tareas
-import gifImage from '../assets/pip-boy-app.gif'; // Importar la imagen GIF
+import { TodoCounter } from '../TodoCounter';
+import { TodoSearch } from '../TodoSearch';
+import { TodoList } from '../TodoList';
+import { TodoTem } from '../TodoTem';
+import { CreateButton } from '../CreateButton';
+import { TodosLoading } from '../TodosLoading';
+import { TodosError } from '../TodosError';
+import { EmptyTodos } from '../EmptyTodos';
+import { TodoForm } from '../TodoForm';
+import gifImage from '../assets/pip-boy-app.gif';
+import Modal from '../Modal'; 
+import { TodoContext } from '../TodoContext';
+import '../Modal/Modal.css';
 
-function AppUI({
-    completedTodos,
-    totalTodos,
-    searchValue,
-    setSearchValue,
-    searchedTodos,
-    deleteTodo,
-}) {
-    const completeTodo = (text) => {
-        // Lógica para marcar una tarea como completada
+
+function AppUI() {
+    const {
+        loading,
+        error,
+        searchedTodos,
+        completeTodo,
+        deleteTodo,
+        openModal,
+        setOpenModal
+    } = React.useContext(TodoContext);
+
+    const handleCloseModal = () => {
+        setOpenModal(false); // Cerrar el modal al hacer clic en el botón "Agregar Misión"
     };
 
     return (
         <div className="app-container">
-            {/* Componente para mostrar el contador de tareas */}
-            <TodoCounter completed={completedTodos} total={totalTodos} />
-            {/* Componente para la barra de búsqueda de tareas */}
-            <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
-            {/* Componente para mostrar la lista de tareas */}
+            <TodoCounter />
+            <TodoSearch />
             <TodoList>
-                {/* Mapea sobre la lista de tareas y renderiza el componente TodoTem */}
+                {loading && <TodosLoading />}
+                {error && <TodosError />}
+                {!loading && searchedTodos.length === 0 && <EmptyTodos />}
                 {searchedTodos.map(todo => (
                     <TodoTem
                         key={todo.text}
@@ -37,9 +47,20 @@ function AppUI({
                     />
                 ))}
             </TodoList>
-            {/* Botón para crear nuevas tareas */}
-            <CreateButton />
-            {/* Contenedor para centrar el GIF */}
+            <CreateButton 
+                setOpenModal={setOpenModal}
+            />
+            {openModal && (
+                <div className="ModalBackground">
+                    <Modal>
+                        <TodoForm />
+                    </Modal>
+                    {/* Botón "Agregar Misión" para cerrar el modal */}
+                    <button className="CloseModalButton" onClick={handleCloseModal}>
+                        Cerrar
+                    </button>
+                </div>
+            )}
             <div className="gif-container">
                 <img src={gifImage} alt="Ejemplo GIF" />
             </div>

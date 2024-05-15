@@ -12,6 +12,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra de texto ajustada para mejor legibilidad */
     transition: all 0.3s ease; /* Transición suave para todos los cambios de estado */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra de caja para profundidad */
+    
 }
 
 button:hover, button:focus {
@@ -19,4 +20,17 @@ button:hover, button:focus {
     color: #053415; /* Color del texto al interactuar */
     box-shadow: 0 0 12px rgba(255, 255, 255, 0.5); /* Sombra de caja intensificada al interactuar */
     transform: translateY(-2px); /* Ligero desplazamiento hacia arriba para efecto de elevación */
+}
+
+.CloseModalButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 10px;
+    z-index: 2; /* Asegura que el botón esté encima del modal */
 }

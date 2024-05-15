@@ -1,15 +1,21 @@
+import React from 'react';
+import { TodoContext } from '../TodoContext';
 import './TodoCounter.css';
 
-function TodoCounter({ total, completed }) {
-  const mensaje = completed === total ? 'Salvaste al Yermo Trotamundos' : '';
+function TodoCounter() {
+  const { completedTodos, totalTodos } = React.useContext(TodoContext);
+  const mensaje = completedTodos === totalTodos ? '¡Salvaste al Yermo Trotamundos!' : '';
+  
   return (
     <div>
       <h1>
-        Has completado {completed} de {total} misiones
+        Has completado {completedTodos} de {totalTodos} misiones
       </h1>
-      {mensaje && <p className='mensaje-victoria'
-      
-      >{mensaje}</p>}
+      {mensaje && (
+        <p className='mensaje-victoria'>
+          {mensaje}
+        </p>
+      )}
     </div>
   );
 }

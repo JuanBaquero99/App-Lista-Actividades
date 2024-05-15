@@ -1,18 +1,15 @@
+import React from 'react';
 import './CreateButton.css';
 
-function CreateButton() {
+function CreateButton({ setOpenModal }) { // Modificado para recibir setOpenModal como prop
     return (
-
         <button className="CreateTodoButton"
-            onClick={
-             (event) =>{console.log('Le diste click')
-                console.log(event)
-                console.log(event.target)
-             } 
-            }
-        
-        >Agregar Misión</button >
-
+            onClick={() => {
+                setOpenModal(prevState => !prevState); // Cambiado a prevState
+            }}
+        >
+            Agregar Misión
+        </button>
     );
 }
 

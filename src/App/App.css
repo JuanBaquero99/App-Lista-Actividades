@@ -28,8 +28,9 @@ body {
   top: 65%;
   left: 60%;
   transform: translate(-50%, -50%);
-  
+  z-index: -1; /* Asegura que el gif-container esté detrás del modal */
 }
+
 .gif-container img {
   width: 900px; /* Define el ancho deseado */
   height: 500px; /* Mantiene la proporción de aspecto */
