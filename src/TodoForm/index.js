@@ -1,3 +1,4 @@
+// TodoForm.js
 import React from "react";
 import { TodoContext } from '../TodoContext';
 import './TodoForm.css';
@@ -8,11 +9,17 @@ function TodoForm() {
         setOpenModal,
     } = React.useContext(TodoContext);
     const [newTodoValue, setNewTodoValue] = React.useState('');
+    const [error, setError] = React.useState('');
 
     const onSubmit = (event) => {
         event.preventDefault();
-        addTodo(newTodoValue);
-        setOpenModal(false);
+        if (newTodoValue.trim() !== '') {
+            addTodo(newTodoValue);
+            setOpenModal(false);
+            setError('');
+        } else {
+            setError('Por favor, ingresa una tarea válida.');
+        }
     };
 
     const onCancel = () => {
@@ -25,7 +32,7 @@ function TodoForm() {
 
     return (
         <form onSubmit={onSubmit} className="TodoForm">
-            <label className="TodoForm-label">
+            <label className="TodoForm-label" htmlFor="todoTextarea">
                 Escribe tu nueva misión
             </label>
             <textarea
@@ -33,7 +40,10 @@ function TodoForm() {
                 placeholder="Cortar cebolla para el almuerzo"
                 value={newTodoValue}
                 onChange={onChange}
+                id="todoTextarea"  // Agrega un id aquí
+                name="todoTextarea" // Agrega un name aquí
             />
+            {error && <p className="error-message">{error}</p>}
             <div className="TodoForm-buttonContainer">
                 <button
                     type="button"

@@ -1,67 +1,58 @@
 .TodoTem {
-    font-family: 'Eurostile Extended', Arial, sans-serif;
-    background-color: transparent;
-    color: #7FF12A;
-    font-size: 24px;
-    text-align: left;
-    margin-top: 30px;
-    padding-left: 40px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-    list-style: none;
-    border-left: 3px solid #24AA5A;
-    transition: all 0.3s ease;
-  }
-  
-  .TodoTem-p--complete {
-    text-decoration: line-through;
-  }
-  
-  .TodoTem-p--animation {
-    position: relative;
-    margin-bottom: 10px;
-    transform: translateX(0px);
-    transition: transform 0.3s ease;
-  }
-  
-  .TodoTem-p--animation:hover {
-    color: #FFFFFF;
-    transform: translateX(10px);
-    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8);
-  }
-  
-  .Icon {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 48px;
-    width: 48px;
-    font-size: 24px;
-    font-weight: 700;
-  }
-  
-  .Icon-check {
-    position: absolute;
-    left: -50px;
-  }
-  
-  .Icon-check--active {
-    color: #4caf50;
-  }
-  
-  .Icon-delete {
-    position: absolute;
-    top: 50%;
-    right: 12px; /* Corregido el valor de right */
-    transform: translateY(-50%);
-    cursor: pointer;
-    height: 48px;
-    width: 48px;
-    font-size: 24px;
-    font-weight: 700;
-  }
-  
-  .Icon-delete:hover {
-    color: red;
-  }
+  font-family: 'Eurostile Extended', Arial, sans-serif;
+  background-color: transparent;
+  color: #7FF12A;
+  font-size: 24px;
+  text-align: left;
+  margin-top: 30px;
+  padding-left: 80px; /* Aumenta el padding para dejar espacio para los iconos */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  list-style: none;
+  transition: all 0.3s ease;
+  position: relative; /* Añade posicionamiento relativo */
+}
+
+.TodoTem-p--complete {
+  text-decoration: line-through;
+}
+
+.TodoTem-p--animation {
+  margin-bottom: 10px;
+  transform: translateX(0px);
+  transition: transform 0.3s ease;
+}
+
+.TodoTem-p--animation:hover {
+  color: #FFFFFF;
+  transform: translateX(10px);
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8);
+}
+
+.Icon {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 48px;
+  width: 48px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.Icon-check {
+  left: 20px; /* Ajusta la posición del icono de verificación */
+}
+
+.Icon-check--active {
+  color: #4caf50;
+}
+
+.Icon-delete {
+  right: 12px;
+}
+
+.Icon-delete:hover {
+  color: red;
+}
+
   

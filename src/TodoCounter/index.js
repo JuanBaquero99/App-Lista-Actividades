@@ -4,7 +4,7 @@ import './TodoCounter.css';
 
 function TodoCounter() {
   const { completedTodos, totalTodos } = React.useContext(TodoContext);
-  const mensaje = completedTodos === totalTodos ? '¡Salvaste al Yermo Trotamundos!' : '';
+  const mensaje = completedTodos === totalTodos && completedTodos > 0 ? '¡Salvaste al Yermo Trotamundos!' : '';
   
   return (
     <div>
