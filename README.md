@@ -16,6 +16,10 @@ Por último, encontrarás recursos adicionales, como consejos sobre el uso de Re
 
 ¡Bienvenido al Yermo! 🚀
 
+Visita la página en el siguiente vinculo: 
+
+https://juanbaquero99.github.io/App-Lista-Actividades/
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
