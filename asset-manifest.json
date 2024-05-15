@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/App-Lista-Actividades/static/css/main.ed8e9131.css",
+    "main.js": "/App-Lista-Actividades/static/js/main.7dc3f170.js",
+    "static/media/pip-boy-app.gif": "/App-Lista-Actividades/static/media/pip-boy-app.a6627509501fd78c1330.gif",
+    "index.html": "/App-Lista-Actividades/index.html",
+    "main.ed8e9131.css.map": "/App-Lista-Actividades/static/css/main.ed8e9131.css.map",
+    "main.7dc3f170.js.map": "/App-Lista-Actividades/static/js/main.7dc3f170.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed8e9131.css",
+    "static/js/main.7dc3f170.js"
+  ]
+}
