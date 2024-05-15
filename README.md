@@ -20,6 +20,9 @@ Visita la página en el siguiente vinculo:
 
 https://juanbaquero99.github.io/App-Lista-Actividades/
 
+![Muestra Desplegado](https://github.com/JuanBaquero99/App-Lista-Actividades/raw/main/giphy.gif)
+
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
