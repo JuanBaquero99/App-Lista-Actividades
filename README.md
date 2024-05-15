@@ -1,12 +1,18 @@
-# Herramienta de Gestión de Actividades
+# Lista de Actividades: Herramienta de Gestión Profesional
 
-¡Hola!
+¡Saludos desde el Yermo Capital!
 
-La aplicación desarrollada empleando tecnologías como React, JSX, HTML, JS y CSS, está diseñada como una herramienta de gestión de actividades, ofreciendo funcionalidades que incluyen la capacidad de agregar, completar y eliminar tareas, entre otras. Esta solución se fundamenta en el paradigma de React.js, con reconocimiento al profesor Juan David Castro por su contribución inicial en la estructura del código que sirvió como base para el desarrollo y despliegue del aplicativo.
+Bienvenido al repositorio oficial de Lista de Actividades, una aplicación diseñada meticulosamente para optimizar tu gestión diaria de tareas. Desarrollada con tecnologías líderes como React, JSX, HTML, JS y CSS, esta plataforma ofrece una experiencia de usuario fluida y eficiente.
 
-A continuación avisos parroquiales con respecto al uso de React si así lo desea y y los scrips para iniciar los paquetes de NPM que me sirvieron de base para desarollar dicha aplicación. 
+Con Lista de Actividades, puedes agregar, completar y eliminar tareas de manera rápida y sencilla. Su interfaz intuitiva y funciones robustas te permiten mantener el control total sobre tus actividades, sin complicaciones innecesarias.
 
-Por cierto! La interfaz de la aplicación esta inspirada en el videojuego Fallout, especificamente en el PipBoy que es la tecnología que acompaña al jugador durante la travesia por el Yermo. 
+Quiero expresar mi agradecimiento al profesor Juan David Castro por su contribución fundamental en la estructura inicial del código, que ha sido esencial para el desarrollo y despliegue exitoso de esta aplicación.
+
+Además, la inspiración para la interfaz proviene del reconocido videojuego Fallout, específicamente del icónico PipBoy que caracteriza la experiencia de los jugadores en el Yermo. Esta elección refleja mi pasión por la innovación y mi compromiso con la excelencia en el diseño.
+
+Por último, encontrarás recursos adicionales, como consejos sobre el uso de React, si así lo deseas, así como los scripts necesarios para iniciar los paquetes de NPM que han respaldado el desarrollo de esta aplicación.
+
+¡Bienvenido al Yermo! 🚀
 
 ## Getting Started with Create React App
 
