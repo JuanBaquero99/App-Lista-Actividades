@@ -13,7 +13,6 @@ import Modal from '../Modal';
 import { TodoContext } from '../TodoContext';
 import '../Modal/Modal.css';
 
-
 function AppUI() {
     const {
         loading,

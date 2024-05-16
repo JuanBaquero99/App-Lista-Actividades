@@ -1,6 +1,6 @@
 body {
   font-family: 'Eurostile Extended', Arial, sans-serif;
-  background-color: #000000;
+  background-color: #000000; /* Aquí se establece el color de fondo */
   color: #fff;
   margin: 0;
   padding: 0;
@@ -19,32 +19,32 @@ body {
   border-top: 3px solid #24AA5A;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
 }
+
 .container {
   position: relative;
 }
 
 .gif-container {
   position: absolute;
-  top: 65%;
-  left: 60%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1; /* Asegura que el gif-container esté detrás del modal */
 }
 
 .gif-container img {
-  width: 900px; /* Define el ancho deseado */
-  height: 500px; /* Mantiene la proporción de aspecto */
+  width: 100%; /* Utilizar el 100% del ancho del contenedor */
+  height: auto; /* Altura automática para mantener la proporción */
 }
+
 @media (max-width: 768px) {
   .gif-container {
-    left: 50%;
     top: 30%;
   }
 }
 
 @media (max-width: 480px) {
   .gif-container {
-    left: 50%;
     top: 25%;
   }
 }
