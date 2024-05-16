@@ -1,5 +1,5 @@
 .ModalBackground {
-    background-color: rgba(32,35,41,.8);
+    background-color: rgba(32, 35, 41, 0.9); /* Ajustar la opacidad del fondo */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,4 +9,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-}   
+    font-size: 16px; /* Reducir el tamaño de la fuente para dispositivos móviles */
+    padding: 20px; /* Agregar un espacio interno para mejorar la legibilidad */
+    overflow-y: auto; /* Permitir el desplazamiento vertical si el contenido es demasiado largo */
+}
